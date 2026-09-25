@@ -2,11 +2,15 @@
 <html lang="de">
 <head>
   <meta charset="UTF-8">
+
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
   <title>AuftragsProfi24 kennenlernen | demotester.de</title>
 
-  <meta name="description" content="AuftragsProfi24 unverbindlich kennenlernen: Erfahren Sie, wie Handwerksbetriebe vollständigere Kundenanfragen erhalten und das Anfrage-System kostenlos selbst testen können.">
+  <meta
+    name="description"
+    content="AuftragsProfi24 für Handwerksbetriebe unverbindlich kennenlernen. Erfahren Sie, wie vollständigere Kundenanfragen entstehen und sehen Sie sich die offizielle Webseite in Ruhe an."
+  >
 
   <meta name="robots" content="index, follow">
 
@@ -23,7 +27,7 @@
 
     body {
       margin: 0;
-      background: #f3f6f9;
+      background: #f2f5f8;
       color: #0b1f3a;
       font-family: Arial, Helvetica, sans-serif;
       line-height: 1.6;
@@ -31,57 +35,19 @@
 
     .page {
       width: min(940px, calc(100% - 32px));
-      margin: 42px auto;
+      margin: 34px auto;
       background: #ffffff;
       border: 1px solid #dce3ea;
       border-radius: 18px;
       overflow: hidden;
-      box-shadow: 0 14px 38px rgba(11, 31, 58, 0.08);
+      box-shadow: 0 14px 38px rgba(11, 31, 58, 0.09);
     }
 
-    header {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      gap: 24px;
-      padding: 25px 42px;
-      border-bottom: 1px solid #e3e8ee;
-    }
-
-    .brand {
-      display: flex;
-      align-items: center;
-      gap: 16px;
-    }
-
-    .brand img {
-      width: 70px;
-      height: 70px;
-      object-fit: contain;
-      border-radius: 8px;
-    }
-
-    .brand-name {
-      font-size: 25px;
-      font-weight: 800;
-      line-height: 1.15;
-      color: #071b38;
-    }
-
-    .brand-subtitle {
-      margin-top: 3px;
-      color: #5c6b7b;
-      font-size: 14px;
-    }
-
-    .domain-badge {
-      white-space: nowrap;
-      background: #eef6ff;
-      color: #0069b4;
-      padding: 7px 16px;
-      border-radius: 999px;
-      font-size: 14px;
-      font-weight: 700;
+    .hero-image {
+      width: 100%;
+      display: block;
+      height: auto;
+      background: #ffffff;
     }
 
     main {
@@ -93,15 +59,15 @@
       color: #0072bc;
       font-size: 14px;
       font-weight: 800;
-      letter-spacing: 0.04em;
+      letter-spacing: 0.045em;
       text-transform: uppercase;
     }
 
     h1 {
-      margin: 0 0 14px;
-      max-width: 760px;
+      margin: 0 0 16px;
+      max-width: 790px;
       color: #071b38;
-      font-size: clamp(31px, 4.5vw, 43px);
+      font-size: clamp(31px, 4.4vw, 43px);
       line-height: 1.12;
       letter-spacing: -0.02em;
     }
@@ -115,18 +81,19 @@
     }
 
     .trust-box {
-      margin: 28px 0 34px;
+      margin: 28px 0 22px;
       padding: 22px 24px;
       background: #f7f9fb;
       border: 1px solid #dce3ea;
       border-radius: 14px;
     }
 
-    .trust-box strong {
+    .trust-box-title {
       display: block;
-      margin-bottom: 12px;
+      margin-bottom: 13px;
       color: #071b38;
       font-size: 17px;
+      font-weight: 800;
     }
 
     .trust-grid {
@@ -137,32 +104,73 @@
 
     .trust-item {
       display: flex;
-      gap: 10px;
       align-items: flex-start;
+      gap: 10px;
       color: #203b57;
+      font-size: 16px;
     }
 
     .check {
       flex: 0 0 auto;
       color: #0072bc;
-      font-size: 22px;
+      font-size: 21px;
       font-weight: 800;
       line-height: 1.2;
     }
 
-    .info-section {
-      margin: 0 0 34px;
+    .primary-action {
+      margin: 0 0 38px;
+    }
+
+    .cta {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      min-height: 58px;
+      padding: 15px 27px;
+      background: #071b38;
+      color: #ffffff;
+      border-radius: 9px;
+      text-decoration: none;
+      font-size: 16px;
+      font-weight: 800;
+      box-shadow: 0 7px 16px rgba(7, 27, 56, 0.18);
+      transition: transform 0.15s ease, box-shadow 0.15s ease;
+    }
+
+    .cta:hover {
+      transform: translateY(-1px);
+      box-shadow: 0 10px 20px rgba(7, 27, 56, 0.22);
+    }
+
+    .quick-safety {
+      margin-top: 12px;
+      color: #52657a;
+      font-size: 14px;
+    }
+
+    .quick-safety strong {
+      color: #173653;
+    }
+
+    .section {
+      padding-top: 31px;
+      border-top: 1px solid #e3e8ee;
+    }
+
+    .section + .section {
+      margin-top: 34px;
     }
 
     h2 {
-      margin: 0 0 10px;
+      margin: 0 0 11px;
       color: #071b38;
-      font-size: 24px;
+      font-size: 25px;
       line-height: 1.25;
     }
 
-    .info-section p {
-      margin: 0 0 17px;
+    .section p {
+      margin: 0 0 18px;
       color: #334a62;
       font-size: 16px;
     }
@@ -170,8 +178,8 @@
     .benefits {
       display: grid;
       grid-template-columns: repeat(2, minmax(0, 1fr));
-      gap: 10px 28px;
-      margin: 18px 0 0;
+      gap: 11px 28px;
+      margin: 20px 0 0;
       padding: 0;
       list-style: none;
     }
@@ -180,6 +188,7 @@
       position: relative;
       padding-left: 28px;
       color: #203b57;
+      font-size: 16px;
     }
 
     .benefits li::before {
@@ -192,45 +201,16 @@
       font-weight: 800;
     }
 
-    .next-step {
-      padding-top: 29px;
-      border-top: 1px solid #e3e8ee;
-    }
-
-    .next-step p {
-      margin: 0 0 20px;
-      max-width: 790px;
-      color: #334a62;
-      font-size: 16px;
-    }
-
-    .cta {
-      display: inline-flex;
-      justify-content: center;
-      align-items: center;
-      min-height: 56px;
-      padding: 15px 26px;
-      background: #071b38;
-      color: #ffffff;
-      border-radius: 9px;
-      text-decoration: none;
-      font-size: 16px;
-      font-weight: 800;
-      box-shadow: 0 6px 14px rgba(7, 27, 56, 0.16);
-      transition: transform 0.15s ease, box-shadow 0.15s ease;
-    }
-
-    .cta:hover {
-      transform: translateY(-1px);
-      box-shadow: 0 9px 18px rgba(7, 27, 56, 0.2);
+    .final-action {
+      margin-top: 22px;
     }
 
     .safety-note {
       display: flex;
-      gap: 9px;
       align-items: flex-start;
-      margin-top: 14px;
-      max-width: 790px;
+      gap: 9px;
+      margin-top: 15px;
+      max-width: 800px;
       color: #52657a;
       font-size: 14px;
       line-height: 1.55;
@@ -245,14 +225,19 @@
       color: #173653;
     }
 
-    .destination {
-      margin-top: 17px;
-      padding: 13px 16px;
+    .decision-box {
+      margin-top: 18px;
+      padding: 15px 17px;
       background: #f7f9fb;
       border-left: 4px solid #0072bc;
-      border-radius: 5px;
+      border-radius: 6px;
       color: #435970;
       font-size: 14px;
+      line-height: 1.55;
+    }
+
+    .decision-box strong {
+      color: #173653;
     }
 
     footer {
@@ -282,38 +267,28 @@
     }
 
     @media (max-width: 700px) {
+      body {
+        background: #ffffff;
+      }
+
       .page {
         width: 100%;
         margin: 0;
+        border: 0;
         border-radius: 0;
-        border-left: 0;
-        border-right: 0;
-      }
-
-      header {
-        padding: 20px;
-        align-items: flex-start;
-      }
-
-      .brand img {
-        width: 55px;
-        height: 55px;
-      }
-
-      .brand-name {
-        font-size: 21px;
-      }
-
-      .brand-subtitle {
-        font-size: 13px;
-      }
-
-      .domain-badge {
-        display: none;
+        box-shadow: none;
       }
 
       main {
-        padding: 30px 22px 36px;
+        padding: 28px 22px 36px;
+      }
+
+      h1 {
+        font-size: 32px;
+      }
+
+      .intro {
+        font-size: 16px;
       }
 
       .trust-grid,
@@ -343,17 +318,12 @@
 
   <div class="page">
 
-    <header>
-      <div class="brand">
-        <img src="logo.png" alt="AuftragsProfi24">
-        <div>
-          <div class="brand-name">AuftragsProfi24</div>
-          <div class="brand-subtitle">Anfrage-System für Handwerksbetriebe</div>
-        </div>
-      </div>
-
-      <div class="domain-badge">demotester.de</div>
-    </header>
+    <!-- Großes Gewerke-Bild -->
+    <img
+      class="hero-image"
+      src="handwerker-gewerke.png"
+      alt="AuftragsProfi24 für zehn Handwerksgewerke: Sanitär Heizung Klima, Elektroinstallation, Maler und Lackierer, Fliesenleger, Dachdecker, Fenster Türen Rollläden, Trockenbau Innenausbau, Tischler Schreiner, Abdichtung Bautenschutz sowie Maurer Betonbau"
+    >
 
     <main>
 
@@ -363,15 +333,16 @@
 
       <p class="intro">
         Wenn Sie von uns den Hinweis auf <strong>demotester.de</strong> erhalten haben,
-        sind Sie hier richtig. Auf dieser Seite erfahren Sie kurz, was AuftragsProfi24
-        macht. Anschließend gelangen Sie mit einem Klick auf die offizielle
-        AuftragsProfi24-Webseite und können sich dort alles in Ruhe ansehen.
+        sind Sie hier richtig. Informieren Sie sich kurz über AuftragsProfi24 oder
+        öffnen Sie direkt unsere offizielle Webseite.
       </p>
 
       <div class="trust-box">
-        <strong>Für Sie wichtig:</strong>
+
+        <span class="trust-box-title">Für Sie wichtig:</span>
 
         <div class="trust-grid">
+
           <div class="trust-item">
             <span class="check">✓</span>
             <span>Kostenlos und unverbindlich</span>
@@ -391,10 +362,30 @@
             <span class="check">✓</span>
             <span>Keine Bestellung durch den Klick</span>
           </div>
+
         </div>
       </div>
 
-      <section class="info-section">
+      <!-- Erster CTA: sofort erreichbar -->
+      <div class="primary-action">
+
+        <a
+          class="cta"
+          href="https://auftragsprofi24.de/"
+          aria-label="Offizielle AuftragsProfi24-Webseite öffnen"
+        >
+          Offizielle AuftragsProfi24-Webseite öffnen →
+        </a>
+
+        <div class="quick-safety">
+          🔒 <strong>Sicher weiter:</strong>
+          Keine Kosten · Keine Registrierung · Keine Bestellung durch den Klick
+        </div>
+
+      </div>
+
+      <section class="section">
+
         <h2>Was ist AuftragsProfi24?</h2>
 
         <p>
@@ -409,55 +400,71 @@
           <li>Weniger unnötige Rückfragen</li>
           <li>Bilder und wichtige Angaben direkt zur Anfrage</li>
           <li>Anfragen aus Ihrem gewünschten Einsatzgebiet</li>
-          <li>Dringlichkeit und wichtige Projektdaten auf einen Blick</li>
-          <li>Schneller entscheiden, ob die Anfrage zu Ihnen passt</li>
+          <li>Dringlichkeit und Projektdaten auf einen Blick</li>
+          <li>Schneller erkennen, ob eine Anfrage zu Ihnen passt</li>
         </ul>
+
       </section>
 
-      <section class="next-step">
+      <section class="section">
+
         <h2>Erst informieren – dann selbst testen</h2>
 
         <p>
-          Über den folgenden Button gelangen Sie ausschließlich auf die
-          <strong>offizielle Webseite von AuftragsProfi24</strong>. Dort können Sie
-          sich zunächst in Ruhe informieren. Wenn Sie möchten, können Sie anschließend
-          selbst kostenlos ausprobieren, wie eine Kundenanfrage bei einem
-          Handwerksbetrieb ankommt.
+          Auf der offiziellen AuftragsProfi24-Webseite können Sie sich zunächst
+          alles in Ruhe ansehen. Wenn Sie möchten, können Sie anschließend
+          kostenlos selbst ausprobieren, wie eine vollständige Kundenanfrage
+          bei einem Handwerksbetrieb ankommt.
         </p>
 
-        <a
-          class="cta"
-          href="https://auftragsprofi24.de/"
-          aria-label="Offizielle AuftragsProfi24-Webseite öffnen">
-          Offizielle AuftragsProfi24-Webseite öffnen →
-        </a>
+        <div class="final-action">
 
-        <div class="safety-note">
-          <span class="lock">🔒</span>
-          <span>
-            <strong>Sicher weiter:</strong>
-            Der Klick öffnet ausschließlich auftragsprofi24.de.
-            Dadurch entstehen keine Kosten, keine Registrierung,
-            keine Bestellung und keine Zahlungsverpflichtung.
-          </span>
+          <a
+            class="cta"
+            href="https://auftragsprofi24.de/"
+            aria-label="Zur offiziellen AuftragsProfi24-Webseite"
+          >
+            AuftragsProfi24 jetzt ansehen →
+          </a>
+
+          <div class="safety-note">
+
+            <span class="lock">🔒</span>
+
+            <span>
+              <strong>Der Klick ist unverbindlich:</strong>
+              Sie öffnen ausschließlich die offizielle Webseite
+              <strong>auftragsprofi24.de</strong>.
+              Dadurch entstehen keine Kosten, keine Registrierung,
+              keine Bestellung und keine Zahlungsverpflichtung.
+            </span>
+
+          </div>
+
+          <div class="decision-box">
+            <strong>Sie entscheiden selbst, wie es weitergeht:</strong>
+            Auf der nächsten Seite können Sie sich zunächst ausschließlich
+            informieren. Ein Test oder ein weiterer Schritt erfolgt nur,
+            wenn Sie ihn selbst auswählen.
+          </div>
+
         </div>
 
-        <div class="destination">
-          <strong>Sie entscheiden selbst, wie es weitergeht:</strong>
-          Auf der nächsten Seite können Sie sich zunächst nur informieren.
-          Ein Test oder weiterer Schritt erfolgt ausschließlich, wenn Sie ihn selbst auswählen.
-        </div>
       </section>
 
     </main>
 
     <footer>
-      <div><strong>demotester.de</strong> · AuftragsProfi24</div>
+
+      <div>
+        <strong>demotester.de</strong> · AuftragsProfi24
+      </div>
 
       <div>
         <a href="https://auftragsprofi24.de/impressum/">Impressum</a>
         <a href="https://auftragsprofi24.de/datenschutz/">Datenschutz</a>
       </div>
+
     </footer>
 
   </div>
