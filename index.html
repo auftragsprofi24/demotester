@@ -5,11 +5,11 @@
 
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <title>AuftragsProfi24 kennenlernen | demotester.de</title>
+  <title>AuftragsProfi24 für Handwerksbetriebe | demotester.de</title>
 
   <meta
     name="description"
-    content="AuftragsProfi24 für Handwerksbetriebe unverbindlich kennenlernen. Erfahren Sie, wie vollständigere Kundenanfragen entstehen und sehen Sie sich die offizielle Webseite in Ruhe an."
+    content="AuftragsProfi24 kostenlos kennenlernen: Vollständigere Kundenanfragen, weniger Rückfragen und schneller erkennen, ob eine Anfrage zu Ihrem Handwerksbetrieb passt."
   >
 
   <meta name="robots" content="index, follow">
@@ -35,7 +35,7 @@
 
     .page {
       width: min(940px, calc(100% - 32px));
-      margin: 34px auto;
+      margin: 32px auto;
       background: #ffffff;
       border: 1px solid #dce3ea;
       border-radius: 18px;
@@ -43,15 +43,25 @@
       box-shadow: 0 14px 38px rgba(11, 31, 58, 0.09);
     }
 
+    /* =========================
+       GROSSES GEWERKE-BILD
+       ========================= */
+
     .hero-image {
-      width: 100%;
       display: block;
+      width: 100%;
       height: auto;
+      aspect-ratio: 1648 / 928;
+      object-fit: cover;
       background: #ffffff;
     }
 
+    /* =========================
+       HAUPTINHALT
+       ========================= */
+
     main {
-      padding: 38px 48px 42px;
+      padding: 34px 48px 42px;
     }
 
     .eyebrow {
@@ -64,31 +74,83 @@
     }
 
     h1 {
-      margin: 0 0 16px;
-      max-width: 790px;
+      margin: 0 0 14px;
+      max-width: 800px;
       color: #071b38;
-      font-size: clamp(31px, 4.4vw, 43px);
-      line-height: 1.12;
+      font-size: clamp(30px, 4.3vw, 42px);
+      line-height: 1.13;
       letter-spacing: -0.02em;
     }
 
     .intro {
       margin: 0;
-      max-width: 790px;
+      max-width: 800px;
       color: #334a62;
       font-size: 17px;
-      line-height: 1.7;
+      line-height: 1.68;
     }
 
+    .intro strong {
+      color: #173653;
+    }
+
+    /* =========================
+       ERSTER CTA
+       ========================= */
+
+    .fast-action {
+      margin-top: 23px;
+    }
+
+    .cta {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      min-height: 58px;
+      padding: 15px 27px;
+      background: #071b38;
+      color: #ffffff;
+      border-radius: 9px;
+      text-decoration: none;
+      font-size: 16px;
+      font-weight: 800;
+      box-shadow: 0 7px 16px rgba(7, 27, 56, 0.18);
+      transition:
+        transform 0.15s ease,
+        box-shadow 0.15s ease,
+        background 0.15s ease;
+    }
+
+    .cta:hover {
+      background: #0d2b50;
+      transform: translateY(-1px);
+      box-shadow: 0 10px 20px rgba(7, 27, 56, 0.22);
+    }
+
+    .fast-note {
+      margin-top: 11px;
+      color: #52657a;
+      font-size: 14px;
+      line-height: 1.5;
+    }
+
+    .fast-note strong {
+      color: #173653;
+    }
+
+    /* =========================
+       VERTRAUEN
+       ========================= */
+
     .trust-box {
-      margin: 28px 0 22px;
-      padding: 22px 24px;
+      margin: 27px 0 35px;
+      padding: 21px 24px;
       background: #f7f9fb;
       border: 1px solid #dce3ea;
       border-radius: 14px;
     }
 
-    .trust-box-title {
+    .trust-title {
       display: block;
       margin-bottom: 13px;
       color: #071b38;
@@ -118,40 +180,9 @@
       line-height: 1.2;
     }
 
-    .primary-action {
-      margin: 0 0 38px;
-    }
-
-    .cta {
-      display: inline-flex;
-      align-items: center;
-      justify-content: center;
-      min-height: 58px;
-      padding: 15px 27px;
-      background: #071b38;
-      color: #ffffff;
-      border-radius: 9px;
-      text-decoration: none;
-      font-size: 16px;
-      font-weight: 800;
-      box-shadow: 0 7px 16px rgba(7, 27, 56, 0.18);
-      transition: transform 0.15s ease, box-shadow 0.15s ease;
-    }
-
-    .cta:hover {
-      transform: translateY(-1px);
-      box-shadow: 0 10px 20px rgba(7, 27, 56, 0.22);
-    }
-
-    .quick-safety {
-      margin-top: 12px;
-      color: #52657a;
-      font-size: 14px;
-    }
-
-    .quick-safety strong {
-      color: #173653;
-    }
+    /* =========================
+       ABSCHNITTE
+       ========================= */
 
     .section {
       padding-top: 31px;
@@ -174,6 +205,10 @@
       color: #334a62;
       font-size: 16px;
     }
+
+    /* =========================
+       VORTEILE
+       ========================= */
 
     .benefits {
       display: grid;
@@ -200,6 +235,10 @@
       font-size: 19px;
       font-weight: 800;
     }
+
+    /* =========================
+       UNTERER CTA
+       ========================= */
 
     .final-action {
       margin-top: 22px;
@@ -240,6 +279,10 @@
       color: #173653;
     }
 
+    /* =========================
+       FOOTER
+       ========================= */
+
     footer {
       display: flex;
       justify-content: space-between;
@@ -266,6 +309,10 @@
       text-decoration: underline;
     }
 
+    /* =========================
+       MOBIL
+       ========================= */
+
     @media (max-width: 700px) {
       body {
         background: #ffffff;
@@ -280,11 +327,11 @@
       }
 
       main {
-        padding: 28px 22px 36px;
+        padding: 27px 22px 36px;
       }
 
       h1 {
-        font-size: 32px;
+        font-size: 31px;
       }
 
       .intro {
@@ -298,6 +345,8 @@
 
       .cta {
         width: 100%;
+        padding-left: 18px;
+        padding-right: 18px;
         text-align: center;
       }
 
@@ -318,34 +367,68 @@
 
   <div class="page">
 
-    <!-- Großes Gewerke-Bild -->
+    <!--
+      Das Bild zeigt sofort AuftragsProfi24 und die 10 Gewerke.
+      Dateiname in GitHub: handwerker-gewerke.png
+    -->
     <img
       class="hero-image"
       src="handwerker-gewerke.png"
-      alt="AuftragsProfi24 für zehn Handwerksgewerke: Sanitär Heizung Klima, Elektroinstallation, Maler und Lackierer, Fliesenleger, Dachdecker, Fenster Türen Rollläden, Trockenbau Innenausbau, Tischler Schreiner, Abdichtung Bautenschutz sowie Maurer Betonbau"
+      width="1648"
+      height="928"
+      loading="eager"
+      fetchpriority="high"
+      alt="AuftragsProfi24 für zehn Handwerksgewerke: Sanitär Heizung Klima, Elektroinstallation, Maler und Lackierer, Fliesenleger und Plattenleger, Dachdecker, Fenster Türen Rollläden, Trockenbau Innenausbau, Tischler Schreiner, Abdichtung Bautenschutz sowie Maurer Betonbau"
     >
 
     <main>
 
       <p class="eyebrow">Willkommen bei AuftragsProfi24</p>
 
-      <h1>Sie möchten sich AuftragsProfi24 erst einmal in Ruhe ansehen?</h1>
+      <h1>
+        Kundenanfragen für Ihren Handwerksbetrieb – einfach selbst ansehen
+      </h1>
 
       <p class="intro">
-        Wenn Sie von uns den Hinweis auf <strong>demotester.de</strong> erhalten haben,
-        sind Sie hier richtig. Informieren Sie sich kurz über AuftragsProfi24 oder
-        öffnen Sie direkt unsere offizielle Webseite.
+        Wenn Sie gerade den Hinweis auf <strong>demotester.de</strong>
+        erhalten haben, sind Sie hier richtig.
+        AuftragsProfi24 erfasst Kundenanfragen direkt online.
+        Dadurch erhalten Sie von Anfang an mehr wichtige Informationen,
+        haben weniger unnötige Rückfragen und können schneller erkennen,
+        ob eine Anfrage für Ihren Betrieb interessant ist.
       </p>
 
+      <!-- Erster Button bewusst sehr früh -->
+      <div class="fast-action">
+
+        <a
+          class="cta"
+          href="https://auftragsprofi24.de/"
+          aria-label="Offizielle AuftragsProfi24-Webseite öffnen"
+        >
+          AuftragsProfi24 kostenlos ansehen →
+        </a>
+
+        <div class="fast-note">
+          🔒
+          <strong>Kostenlos und unverbindlich:</strong>
+          Keine Registrierung · Keine Zahlungsdaten · Keine Bestellung durch den Klick
+        </div>
+
+      </div>
+
+      <!-- Vertrauensargumente -->
       <div class="trust-box">
 
-        <span class="trust-box-title">Für Sie wichtig:</span>
+        <span class="trust-title">
+          In weniger als 60 Sekunden einen ersten Eindruck bekommen:
+        </span>
 
         <div class="trust-grid">
 
           <div class="trust-item">
             <span class="check">✓</span>
-            <span>Kostenlos und unverbindlich</span>
+            <span>Kostenlos und unverbindlich ansehen</span>
           </div>
 
           <div class="trust-item">
@@ -364,57 +447,49 @@
           </div>
 
         </div>
-      </div>
-
-      <!-- Erster CTA: sofort erreichbar -->
-      <div class="primary-action">
-
-        <a
-          class="cta"
-          href="https://auftragsprofi24.de/"
-          aria-label="Offizielle AuftragsProfi24-Webseite öffnen"
-        >
-          Offizielle AuftragsProfi24-Webseite öffnen →
-        </a>
-
-        <div class="quick-safety">
-          🔒 <strong>Sicher weiter:</strong>
-          Keine Kosten · Keine Registrierung · Keine Bestellung durch den Klick
-        </div>
 
       </div>
 
+      <!-- Erklärung -->
       <section class="section">
 
         <h2>Was ist AuftragsProfi24?</h2>
 
         <p>
-          AuftragsProfi24 ist ein Anfrage-System speziell für Handwerksbetriebe.
-          Kunden werden Schritt für Schritt durch ihre Anfrage geführt, damit Sie
-          von Anfang an die wichtigsten Informationen erhalten und schneller
-          einschätzen können, ob eine Anfrage für Ihren Betrieb interessant ist.
+          Viele Handwerksbetriebe verlieren im Alltag Zeit,
+          weil Kundenanfragen per Telefon oder E-Mail nicht vollständig
+          ankommen. AuftragsProfi24 führt Interessenten Schritt für Schritt
+          durch ihre Anfrage und sammelt wichtige Angaben direkt online.
         </p>
 
         <ul class="benefits">
+
           <li>Vollständigere Kundenanfragen</li>
+
           <li>Weniger unnötige Rückfragen</li>
+
           <li>Bilder und wichtige Angaben direkt zur Anfrage</li>
+
           <li>Anfragen aus Ihrem gewünschten Einsatzgebiet</li>
+
           <li>Dringlichkeit und Projektdaten auf einen Blick</li>
+
           <li>Schneller erkennen, ob eine Anfrage zu Ihnen passt</li>
+
         </ul>
 
       </section>
 
+      <!-- Zweite Möglichkeit zum Weiterklicken -->
       <section class="section">
 
-        <h2>Erst informieren – dann selbst testen</h2>
+        <h2>Erst ansehen – dann selbst entscheiden</h2>
 
         <p>
-          Auf der offiziellen AuftragsProfi24-Webseite können Sie sich zunächst
-          alles in Ruhe ansehen. Wenn Sie möchten, können Sie anschließend
-          kostenlos selbst ausprobieren, wie eine vollständige Kundenanfrage
-          bei einem Handwerksbetrieb ankommt.
+          Auf der offiziellen AuftragsProfi24-Webseite können Sie sich
+          zunächst alles in Ruhe ansehen. Wenn Sie möchten, können Sie
+          anschließend kostenlos selbst ausprobieren, wie eine vollständige
+          Kundenanfrage bei einem Handwerksbetrieb ankommt.
         </p>
 
         <div class="final-action">
@@ -422,9 +497,9 @@
           <a
             class="cta"
             href="https://auftragsprofi24.de/"
-            aria-label="Zur offiziellen AuftragsProfi24-Webseite"
+            aria-label="AuftragsProfi24 jetzt ansehen"
           >
-            AuftragsProfi24 jetzt ansehen →
+            Offizielle AuftragsProfi24-Webseite öffnen →
           </a>
 
           <div class="safety-note">
