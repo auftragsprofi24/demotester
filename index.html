@@ -35,7 +35,6 @@
       line-height: 1.6;
     }
 
-    /* Verhindert unerwünschte iPhone-Formatierung von Adressen */
     a[x-apple-data-detectors] {
       color: inherit !important;
       text-decoration: none !important;
@@ -186,7 +185,7 @@
     .demo-grid {
       display: grid;
       grid-template-columns: repeat(2, minmax(0, 1fr));
-      gap: 12px 28px;
+      gap: 16px 28px;
     }
 
     .demo-item {
@@ -195,6 +194,11 @@
       gap: 10px;
       color: #203b57;
       font-size: 16px;
+      line-height: 1.45;
+    }
+
+    .demo-text {
+      display: block;
     }
 
     .check {
@@ -383,6 +387,10 @@
         grid-template-columns: 1fr;
       }
 
+      .demo-item br {
+        display: none;
+      }
+
       .cta {
         width: 100%;
         min-height: 56px;
@@ -421,10 +429,6 @@
         height: 48px;
       }
 
-      /* WICHTIG:
-         Auf Mobil sitzt der gesamte Text exakt mittig
-         unter dem jeweiligen Icon.
-      */
       .card-content {
         width: 100%;
         margin: 0;
@@ -505,7 +509,6 @@
 
       </div>
 
-      <!-- DEMO: ausschließlich das eigene Testerlebnis -->
       <div class="demo-box">
 
         <span class="demo-title">
@@ -520,29 +523,33 @@
 
           <div class="demo-item">
             <span class="check">✓</span>
-            <span>
-              Erleben Sie die Anfrage aus Sicht Ihres Kunden
+            <span class="demo-text">
+              Erleben Sie die Anfrage aus Sicht Ihres Kunden<br>
+              und den Ablauf Schritt für Schritt
             </span>
           </div>
 
           <div class="demo-item">
             <span class="check">✓</span>
-            <span>
-              Sehen Sie, welche Angaben der Kunde Schritt für Schritt macht
+            <span class="demo-text">
+              Sehen Sie, welche Angaben Ihr Kunde macht<br>
+              und welche Informationen bei Ihnen ankommen
             </span>
           </div>
 
           <div class="demo-item">
             <span class="check">✓</span>
-            <span>
-              Testen Sie Bilder und Sprachnachricht selbst
+            <span class="demo-text">
+              Testen Sie Bilder und Sprachnachrichten selbst<br>
+              und erleben Sie alle Funktionen direkt
             </span>
           </div>
 
           <div class="demo-item">
             <span class="check">✓</span>
-            <span>
-              Sehen Sie anschließend, wie die vollständige Anfrage beim Betrieb ankommt
+            <span class="demo-text">
+              Sehen Sie die vollständige Anfrage am Ende<br>
+              und alle Angaben übersichtlich zusammen
             </span>
           </div>
 
@@ -550,7 +557,6 @@
 
       </div>
 
-      <!-- PRODUKT: nur Erklärung des Systems -->
       <section class="section">
 
         <h2>
@@ -573,7 +579,6 @@
 
       </section>
 
-      <!-- ZWEITER CTA -->
       <section class="section">
 
         <h2>
@@ -613,15 +618,10 @@
 
     </main>
 
-    <!-- =========================
-         UNTERNEHMENSDATEN
-         ========================= -->
-
     <footer class="company-footer">
 
       <div class="company-grid">
 
-        <!-- 1 -->
         <div class="company-card">
 
           <div class="card-icon-wrap">
@@ -654,7 +654,6 @@
 
         </div>
 
-        <!-- 2 -->
         <div class="company-card">
 
           <div class="card-icon-wrap">
@@ -698,7 +697,6 @@
 
         </div>
 
-        <!-- 3 -->
         <div class="company-card">
 
           <div class="card-icon-wrap">
@@ -729,7 +727,6 @@
 
         </div>
 
-        <!-- 4 -->
         <div class="company-card">
 
           <div class="card-icon-wrap">
