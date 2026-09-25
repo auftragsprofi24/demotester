@@ -5,11 +5,13 @@
 
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+  <meta name="format-detection" content="telephone=no">
+
   <title>AuftragsProfi24 für Handwerksbetriebe | demotester.de</title>
 
   <meta
     name="description"
-    content="AuftragsProfi24 kostenlos kennenlernen: Vollständigere Kundenanfragen, weniger Rückfragen und zusätzliche Chancen, bei Google und in KI-Systemen besser gefunden zu werden."
+    content="AuftragsProfi24 für Handwerksbetriebe kennenlernen: strukturierte Kundenanfragen, weniger Rückfragen und zusätzliche Chancen auf Sichtbarkeit bei Google und in KI-Systemen."
   >
 
   <meta name="robots" content="index, follow">
@@ -31,6 +33,13 @@
       color: #0b1f3a;
       font-family: Arial, Helvetica, sans-serif;
       line-height: 1.6;
+    }
+
+    /* Verhindert unerwünschte iPhone-Formatierung von Adressen */
+    a[x-apple-data-detectors] {
+      color: inherit !important;
+      text-decoration: none !important;
+      font: inherit !important;
     }
 
     .page {
@@ -94,18 +103,6 @@
       color: #173653;
     }
 
-    .visibility-note {
-      margin-top: 15px;
-      max-width: 810px;
-      color: #334a62;
-      font-size: 17px;
-      line-height: 1.68;
-    }
-
-    .visibility-note strong {
-      color: #173653;
-    }
-
     /* =========================
        BUTTONS
        ========================= */
@@ -160,12 +157,12 @@
     }
 
     /* =========================
-       DEMO-KASTEN
+       DEMO
        ========================= */
 
     .demo-box {
-      margin: 28px 0 36px;
-      padding: 22px 24px;
+      margin: 30px 0 36px;
+      padding: 23px 24px;
       background: #f7f9fb;
       border: 1px solid #dce3ea;
       border-radius: 14px;
@@ -180,15 +177,16 @@
     }
 
     .demo-subtitle {
-      margin: 0 0 16px;
+      margin: 0 0 17px;
       color: #52657a;
       font-size: 14px;
+      line-height: 1.55;
     }
 
     .demo-grid {
       display: grid;
       grid-template-columns: repeat(2, minmax(0, 1fr));
-      gap: 12px 30px;
+      gap: 12px 28px;
     }
 
     .demo-item {
@@ -228,39 +226,29 @@
     }
 
     .section p {
-      margin: 0 0 18px;
+      margin: 0;
       color: #334a62;
       font-size: 16px;
+      line-height: 1.65;
     }
 
     /* =========================
-       VORTEILE
+       GOOGLE / KI
        ========================= */
 
-    .benefits {
-      display: grid;
-      grid-template-columns: repeat(2, minmax(0, 1fr));
-      gap: 11px 28px;
-      margin: 20px 0 0;
-      padding: 0;
-      list-style: none;
-    }
-
-    .benefits li {
-      position: relative;
-      padding-left: 28px;
-      color: #203b57;
+    .visibility-box {
+      margin-top: 22px;
+      padding: 18px 20px;
+      background: #f1f7fd;
+      border-left: 4px solid #0072bc;
+      border-radius: 8px;
+      color: #334a62;
       font-size: 16px;
+      line-height: 1.6;
     }
 
-    .benefits li::before {
-      content: "✓";
-      position: absolute;
-      left: 0;
-      top: -1px;
-      color: #0072bc;
-      font-size: 19px;
-      font-weight: 800;
+    .visibility-box strong {
+      color: #071b38;
     }
 
     /* =========================
@@ -284,7 +272,7 @@
     }
 
     .company-card {
-      min-height: 210px;
+      min-height: 205px;
       padding: 18px 17px 20px;
       background: #ffffff;
       border: 1px solid #dce6ef;
@@ -296,8 +284,8 @@
       display: flex;
       justify-content: center;
       align-items: center;
-      padding-bottom: 16px;
-      margin-bottom: 16px;
+      padding-bottom: 15px;
+      margin-bottom: 15px;
       border-bottom: 1px solid #e2e8ee;
     }
 
@@ -323,7 +311,7 @@
       padding: 0;
       color: #435970;
       font-size: 14px;
-      line-height: 1.5;
+      line-height: 1.52;
       text-align: left;
     }
 
@@ -341,7 +329,6 @@
     }
 
     .footer-link {
-      display: inline;
       margin: 0;
       padding: 0;
       color: #0072bc;
@@ -381,32 +368,36 @@
       }
 
       main {
-        padding: 27px 22px 36px;
+        padding: 27px 22px 34px;
       }
 
       h1 {
         font-size: 28px;
       }
 
-      .intro,
-      .visibility-note {
+      .intro {
         font-size: 16px;
       }
 
-      .demo-grid,
-      .benefits {
+      .demo-grid {
         grid-template-columns: 1fr;
       }
 
       .cta {
         width: 100%;
-        padding-left: 18px;
-        padding-right: 18px;
+        min-height: 56px;
+        padding-left: 16px;
+        padding-right: 16px;
         text-align: center;
+        font-size: 15px;
+      }
+
+      .safety-line {
+        font-size: 13px;
       }
 
       .company-footer {
-        padding: 24px 18px;
+        padding: 20px 16px 24px;
       }
 
       .company-grid {
@@ -416,20 +407,31 @@
 
       .company-card {
         min-height: auto;
-        padding: 18px 18px 20px;
+        padding: 18px 20px 20px;
       }
 
       .card-icon-wrap {
         justify-content: center;
-        margin-bottom: 14px;
-        padding-bottom: 14px;
+        padding-bottom: 13px;
+        margin-bottom: 13px;
       }
 
+      .card-icon {
+        width: 48px;
+        height: 48px;
+      }
+
+      /* WICHTIG:
+         Auf Mobil sitzt der gesamte Text exakt mittig
+         unter dem jeweiligen Icon.
+      */
       .card-content {
         width: 100%;
         margin: 0;
         padding: 0;
         text-align: center;
+        font-size: 14px;
+        line-height: 1.5;
       }
 
       .company-name {
@@ -474,17 +476,10 @@
         Wenn Sie gerade den Hinweis auf
         <strong>demotester.de</strong>
         erhalten haben, sind Sie hier richtig.
-        AuftragsProfi24 erfasst Kundenanfragen direkt online.
-        Dadurch erhalten Sie von Anfang an mehr wichtige Informationen,
-        haben weniger unnötige Rückfragen und können schneller erkennen,
-        ob eine Anfrage für Ihren Betrieb interessant ist.
-      </p>
-
-      <p class="visibility-note">
-        <strong>Ein zusätzlicher Vorteil:</strong>
-        Bei Google und in KI-Systemen wie
-        <strong>ChatGPT, Gemini &amp; Co.</strong>
-        besser gefunden werden – für zusätzliche Chancen auf neue Kundenanfragen.
+        Es geht um Kundenanfragen für Ihren Handwerksbetrieb:
+        AuftragsProfi24 erfasst diese strukturiert online,
+        damit Sie schneller erkennen können, ob eine Anfrage
+        für Ihren Betrieb interessant ist.
       </p>
 
       <div class="action">
@@ -498,6 +493,7 @@
 
         <div class="safety-line">
           <span class="lock">🔒</span>
+
           <span>
             <strong>Der Klick ist unverbindlich:</strong>
             Sie öffnen ausschließlich die offizielle Webseite
@@ -509,6 +505,7 @@
 
       </div>
 
+      <!-- DEMO: ausschließlich das eigene Testerlebnis -->
       <div class="demo-box">
 
         <span class="demo-title">
@@ -516,35 +513,44 @@
         </span>
 
         <p class="demo-subtitle">
-          So erleben Sie selbst, was später auch Ihre Kunden bei einer Anfrage sehen und ausfüllen.
+          So erleben Sie den Ablauf einmal selbst aus Sicht eines Kunden.
         </p>
 
         <div class="demo-grid">
 
           <div class="demo-item">
             <span class="check">✓</span>
-            <span>Erleben Sie die Anfrage aus Sicht Ihres Kunden</span>
+            <span>
+              Erleben Sie die Anfrage aus Sicht Ihres Kunden
+            </span>
           </div>
 
           <div class="demo-item">
             <span class="check">✓</span>
-            <span>Sehen Sie, welche Informationen Ihr Betrieb direkt erhält</span>
+            <span>
+              Sehen Sie, welche Angaben der Kunde Schritt für Schritt macht
+            </span>
           </div>
 
           <div class="demo-item">
             <span class="check">✓</span>
-            <span>Testen Sie Bilder und Sprachnachricht</span>
+            <span>
+              Testen Sie Bilder und Sprachnachricht selbst
+            </span>
           </div>
 
           <div class="demo-item">
             <span class="check">✓</span>
-            <span>Erkennen Sie, warum dadurch weniger Rückfragen entstehen</span>
+            <span>
+              Sehen Sie anschließend, wie die vollständige Anfrage beim Betrieb ankommt
+            </span>
           </div>
 
         </div>
 
       </div>
 
+      <!-- PRODUKT: nur Erklärung des Systems -->
       <section class="section">
 
         <h2>
@@ -552,30 +558,22 @@
         </h2>
 
         <p>
-          Viele Handwerksbetriebe verlieren im Alltag Zeit,
-          weil Kundenanfragen per Telefon oder E-Mail nicht vollständig
-          ankommen. AuftragsProfi24 führt Interessenten Schritt für Schritt
-          durch ihre Anfrage und sammelt wichtige Angaben direkt online.
+          AuftragsProfi24 ist ein Anfrage-System speziell für Handwerksbetriebe.
+          Kunden werden strukturiert durch ihre Anfrage geführt, damit wichtige
+          Angaben von Anfang an vollständig vorliegen, unnötige Rückfragen
+          reduziert werden und Sie Anfragen schneller einschätzen können.
         </p>
 
-        <ul class="benefits">
-
-          <li>Vollständigere Kundenanfragen</li>
-
-          <li>Weniger unnötige Rückfragen</li>
-
-          <li>Bilder und wichtige Angaben direkt zur Anfrage</li>
-
-          <li>Anfragen aus Ihrem gewünschten Einsatzgebiet</li>
-
-          <li>Dringlichkeit und Projektdaten auf einen Blick</li>
-
-          <li>Schneller erkennen, ob eine Anfrage zu Ihnen passt</li>
-
-        </ul>
+        <div class="visibility-box">
+          <strong>Zusätzlicher Vorteil:</strong>
+          Ihr Betrieb kann bei Google und in KI-Systemen wie
+          <strong>ChatGPT, Gemini &amp; Co.</strong>
+          besser gefunden werden – für zusätzliche Chancen auf neue Kundenanfragen.
+        </div>
 
       </section>
 
+      <!-- ZWEITER CTA -->
       <section class="section">
 
         <h2>
@@ -585,8 +583,7 @@
         <p>
           Auf der offiziellen AuftragsProfi24-Webseite können Sie sich
           zunächst alles in Ruhe ansehen. Wenn Sie möchten, können Sie
-          anschließend kostenlos selbst ausprobieren, wie eine vollständige
-          Kundenanfrage bei einem Handwerksbetrieb ankommt.
+          anschließend die Kundenanfrage kostenlos selbst testen.
         </p>
 
         <div class="action">
@@ -600,6 +597,7 @@
 
           <div class="safety-line">
             <span class="lock">🔒</span>
+
             <span>
               <strong>Der Klick ist unverbindlich:</strong>
               Sie öffnen ausschließlich die offizielle Webseite
@@ -615,11 +613,15 @@
 
     </main>
 
+    <!-- =========================
+         UNTERNEHMENSDATEN
+         ========================= -->
+
     <footer class="company-footer">
 
       <div class="company-grid">
 
-        <!-- Unternehmen -->
+        <!-- 1 -->
         <div class="company-card">
 
           <div class="card-icon-wrap">
@@ -652,7 +654,7 @@
 
         </div>
 
-        <!-- Kontakt -->
+        <!-- 2 -->
         <div class="company-card">
 
           <div class="card-icon-wrap">
@@ -673,7 +675,9 @@
           </div>
 
           <div class="card-content">
+
             <strong>E-Mail:</strong><br>
+
             <a
               class="footer-link"
               href="mailto:info@auftragsprofi24.de"
@@ -682,17 +686,19 @@
             </a><br>
 
             <strong>Web:</strong><br>
+
             <a
               class="footer-link"
               href="https://www.auftragsprofi24.de/"
             >
               www.auftragsprofi24.de
             </a>
+
           </div>
 
         </div>
 
-        <!-- Register -->
+        <!-- 3 -->
         <div class="company-card">
 
           <div class="card-icon-wrap">
@@ -723,7 +729,7 @@
 
         </div>
 
-        <!-- Geschäftsführung / USt. -->
+        <!-- 4 -->
         <div class="company-card">
 
           <div class="card-icon-wrap">
