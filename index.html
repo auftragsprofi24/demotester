@@ -44,7 +44,7 @@
     }
 
     /* =========================
-       GROSSES GEWERKE-BILD
+       GEWERKE-BILD
        ========================= */
 
     .hero-image {
@@ -95,7 +95,7 @@
     }
 
     /* =========================
-       ERSTER CTA
+       BUTTONS
        ========================= */
 
     .fast-action {
@@ -139,7 +139,7 @@
     }
 
     /* =========================
-       VERTRAUEN
+       VERTRAUENSKASTEN
        ========================= */
 
     .trust-box {
@@ -280,38 +280,109 @@
     }
 
     /* =========================
-       FOOTER
+       UNTERNEHMENSBEREICH UNTEN
        ========================= */
 
-    footer {
+    .company-footer {
+      padding: 28px 30px 30px;
+      background:
+        linear-gradient(
+          180deg,
+          #fbfcfd 0%,
+          #f5f8fb 100%
+        );
+      border-top: 1px solid #dce3ea;
+    }
+
+    .company-grid {
+      display: grid;
+      grid-template-columns: repeat(4, minmax(0, 1fr));
+      gap: 14px;
+    }
+
+    .company-card {
+      min-height: 205px;
+      padding: 20px 18px;
+      background: #ffffff;
+      border: 1px solid #dce6ef;
+      border-radius: 13px;
+      box-shadow: 0 4px 14px rgba(11, 31, 58, 0.045);
+    }
+
+    .card-header {
       display: flex;
-      justify-content: space-between;
       align-items: center;
-      gap: 20px;
-      padding: 18px 38px;
-      background: #fafbfc;
-      border-top: 1px solid #e3e8ee;
-      color: #5c6b7b;
-      font-size: 13px;
+      gap: 11px;
+      margin-bottom: 14px;
+      padding-bottom: 13px;
+      border-bottom: 1px solid #e2e8ee;
     }
 
-    footer strong {
+    .card-icon {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 46px;
+      height: 46px;
+      flex: 0 0 46px;
+      background: #eaf4ff;
+      border-radius: 50%;
+      color: #0876cf;
+    }
+
+    .card-icon svg {
+      width: 24px;
+      height: 24px;
+      stroke: currentColor;
+    }
+
+    .card-title {
+      color: #071b38;
+      font-size: 17px;
+      font-weight: 800;
+      line-height: 1.2;
+    }
+
+    .card-content {
+      color: #435970;
+      font-size: 14px;
+      line-height: 1.5;
+    }
+
+    .card-content strong {
       color: #173653;
     }
 
-    footer a {
-      margin-left: 18px;
+    .company-name {
+      display: block;
       color: #173653;
+      font-weight: 800;
+      margin-bottom: 10px;
+    }
+
+    .info-group + .info-group {
+      margin-top: 12px;
+    }
+
+    .footer-link {
+      color: #0072bc;
       text-decoration: none;
+      overflow-wrap: anywhere;
     }
 
-    footer a:hover {
+    .footer-link:hover {
       text-decoration: underline;
     }
 
     /* =========================
-       MOBIL
+       MOBIL / TABLET
        ========================= */
+
+    @media (max-width: 900px) {
+      .company-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+      }
+    }
 
     @media (max-width: 700px) {
       body {
@@ -350,14 +421,16 @@
         text-align: center;
       }
 
-      footer {
-        padding: 18px 22px;
-        flex-direction: column;
-        align-items: flex-start;
+      .company-footer {
+        padding: 24px 18px;
       }
 
-      footer a {
-        margin: 0 18px 0 0;
+      .company-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .company-card {
+        min-height: auto;
       }
     }
   </style>
@@ -379,14 +452,17 @@
 
     <main>
 
-      <p class="eyebrow">Willkommen bei AuftragsProfi24</p>
+      <p class="eyebrow">
+        Willkommen bei AuftragsProfi24
+      </p>
 
       <h1>
         Kundenanfragen für Ihren Handwerksbetrieb – einfach selbst ansehen
       </h1>
 
       <p class="intro">
-        Wenn Sie gerade den Hinweis auf <strong>demotester.de</strong>
+        Wenn Sie gerade den Hinweis auf
+        <strong>demotester.de</strong>
         erhalten haben, sind Sie hier richtig.
         AuftragsProfi24 erfasst Kundenanfragen direkt online.
         Dadurch erhalten Sie von Anfang an mehr wichtige Informationen,
@@ -399,9 +475,8 @@
         <a
           class="cta"
           href="https://auftragsprofi24.de/"
-          aria-label="Offizielle AuftragsProfi24-Webseite öffnen"
         >
-          AuftragsProfi24 kostenlos ansehen →
+          Offizielle AuftragsProfi24-Webseite öffnen →
         </a>
 
         <div class="fast-note">
@@ -475,7 +550,9 @@
 
       <section class="section">
 
-        <h2>Erst ansehen – dann selbst entscheiden</h2>
+        <h2>
+          Erst ansehen – dann selbst entscheiden
+        </h2>
 
         <p>
           Auf der offiziellen AuftragsProfi24-Webseite können Sie sich
@@ -489,7 +566,6 @@
           <a
             class="cta"
             href="https://auftragsprofi24.de/"
-            aria-label="AuftragsProfi24 jetzt ansehen"
           >
             Offizielle AuftragsProfi24-Webseite öffnen →
           </a>
@@ -521,15 +597,202 @@
 
     </main>
 
-    <footer>
+    <!-- =========================
+         UNTERNEHMENSDATEN
+         ========================= -->
 
-      <div>
-        <strong>demotester.de</strong> · AuftragsProfi24
-      </div>
+    <footer class="company-footer">
 
-      <div>
-        <a href="https://auftragsprofi24.de/impressum/">Impressum</a>
-        <a href="https://auftragsprofi24.de/datenschutz/">Datenschutz</a>
+      <div class="company-grid">
+
+        <!-- Unternehmen -->
+        <div class="company-card">
+
+          <div class="card-header">
+
+            <div class="card-icon">
+              <svg
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              >
+                <path d="M3 21h18"></path>
+                <path d="M6 21V4h9v17"></path>
+                <path d="M15 9h3v12"></path>
+                <path d="M9 7h2"></path>
+                <path d="M9 11h2"></path>
+                <path d="M9 15h2"></path>
+              </svg>
+            </div>
+
+            <div class="card-title">
+              Unternehmen
+            </div>
+
+          </div>
+
+          <div class="card-content">
+
+            <span class="company-name">
+              AuftragsProfi24
+            </span>
+
+            Schackstr. 18<br>
+            29221 Celle<br>
+            Deutschland
+
+          </div>
+
+        </div>
+
+        <!-- Kontakt -->
+        <div class="company-card">
+
+          <div class="card-header">
+
+            <div class="card-icon">
+              <svg
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              >
+                <rect x="3" y="5" width="18" height="14" rx="2"></rect>
+                <path d="m3 7 9 6 9-6"></path>
+              </svg>
+            </div>
+
+            <div class="card-title">
+              Kontakt
+            </div>
+
+          </div>
+
+          <div class="card-content">
+
+            <div class="info-group">
+
+              <strong>E-Mail:</strong><br>
+
+              <a
+                class="footer-link"
+                href="mailto:info@auftragsprofi24.de"
+              >
+                info@auftragsprofi24.de
+              </a>
+
+            </div>
+
+            <div class="info-group">
+
+              <strong>Web:</strong><br>
+
+              <a
+                class="footer-link"
+                href="https://www.auftragsprofi24.de/"
+              >
+                www.auftragsprofi24.de
+              </a>
+
+            </div>
+
+          </div>
+
+        </div>
+
+        <!-- Register -->
+        <div class="company-card">
+
+          <div class="card-header">
+
+            <div class="card-icon">
+              <svg
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              >
+                <path d="M6 2h9l4 4v16H6z"></path>
+                <path d="M14 2v5h5"></path>
+                <path d="M9 13h6"></path>
+                <path d="M9 17h6"></path>
+              </svg>
+            </div>
+
+            <div class="card-title">
+              Register
+            </div>
+
+          </div>
+
+          <div class="card-content">
+
+            <div class="info-group">
+
+              <strong>Registergericht:</strong><br>
+              Amtsgericht Lüneburg
+
+            </div>
+
+            <div class="info-group">
+
+              <strong>Registernummer:</strong><br>
+              HRB 213116
+
+            </div>
+
+          </div>
+
+        </div>
+
+        <!-- Geschäftsführerin + USt. -->
+        <div class="company-card">
+
+          <div class="card-header">
+
+            <div class="card-icon">
+              <svg
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              >
+                <circle cx="12" cy="8" r="4"></circle>
+                <path d="M5 21c0-4 3-7 7-7s7 3 7 7"></path>
+              </svg>
+            </div>
+
+            <div class="card-title">
+              Geschäftsführung &amp; USt.
+            </div>
+
+          </div>
+
+          <div class="card-content">
+
+            <div class="info-group">
+
+              <strong>Geschäftsführerin:</strong><br>
+              Regina Freund
+
+            </div>
+
+            <div class="info-group">
+
+              <strong>Umsatzsteuer-ID:</strong><br>
+              DE456930333
+
+            </div>
+
+          </div>
+
+        </div>
+
       </div>
 
     </footer>
